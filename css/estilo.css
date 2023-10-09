@@ -1,0 +1,682 @@
+/*fuentes de fonts  con el @import y la url de la fuentes que queremos poner */
+/*----tamb lo de media query ---*/
+
+
+
+/*media query */
+
+@media (max-width:500px){
+  *{
+    margin: 0;
+    padding: 0;
+  
+  }
+
+ 
+ body {
+  font-family:'Courier New', Courier, monospace
+   /*overflow-x: hidden ;*/
+   overflow-x hidden;
+}
+
+
+/*----------------------------- MENU -----------------------------------------
+
+
+*/
+#menu li > a {   /*es un poco mas especifico para boostrap*/
+  font-size :18px;
+  font-weight : bold;
+  color: black;
+}
+
+/*
+-------------------------carusel----------------------------------------
+*/
+.carousel-inner {
+max-height :39rem ; 
+
+}
+
+
+
+
+/*<------ foooter ---------------->*/
+
+
+
+footer{
+  background-color: #cccfd3;
+  min-height:100px;
+
+}
+
+footer p {
+  color : rgb(255, 255, 255);
+  text-align: center;
+  background-color: #000000;
+ 
+}
+
+#iconos i {
+  font-size:26px;
+  padding: 0 8px;
+ 
+}
+
+
+
+}
+
+/*<------ foooter ---------------->*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<escritorio>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<pagina indexx>>>>>>>>>>>>>>>>*/
+
+
+.carousel-inner {
+  max-height :40rem ; 
+
+  }
+  
+
+/* empieza presentacion
+--------------------------------*/
+.subtitulo-area{
+  background-color: rgb(8, 8, 8);
+  padding: 30px;
+  color: white;
+  margin-top:15px ;
+  
+}
+
+.subtitulo-area h2{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.index-informacion{
+  background-color: black;
+  padding: 15px;
+  
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(1,300px);
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+
+.caja-uno{
+  grid-column: 1/2;
+  grid-row: 1;
+  background-color:rgb(208, 212, 208);
+  color: rgb(14, 14, 14);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.caja-uno p{
+  margin-top: 15px;
+}
+
+
+.caja-dos{
+  grid-column: 2/3;
+  grid-row: 1;
+  background-color: rgb(208, 212, 208);
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+
+}
+.caja-dos img{
+  width: 650px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+
+@media (max-width: 500px) {
+  .index-informacion {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .caja-uno {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .caja-uno p{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .caja-dos {
+    grid-column: 1;
+    grid-row: 2;
+
+  }
+
+  .caja-dos img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+
+
+/* termina presentacion!
+--------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<pagina nosotros>>>>>>>>>>>>>>>>>>>>>*/
+
+
+#nosotros{
+margin: 20px ;
+background-color: #e3ebf0;
+/*para q no se rompa la pantalla*/
+display: flex;
+flex-wrap: wrap;
+/*para poder utilizar grillas */
+display: grid;
+/*grids columnas*/
+grid-template-columns: repeat(3,1fr) ;
+/*grids filas */
+grid-template-rows: repeat(3,auto);
+
+/*espacios entre filas y columnas */
+row-gap: 5px;
+column-gap: 5px;
+
+}
+
+.item-one-nosotros{
+  grid-column: 1/4;
+  grid-row: 1/2;
+background-color: rgb(10, 10, 10);
+border-radius: 10px; 
+}
+
+.item-one-nosotros h2{
+  color: #e3ebf0;
+  margin-left: 10px;
+
+
+}
+.item-one-nosotros p{
+  color: #fcfafa;
+  margin-top: 26px;
+  margin-bottom: 10px;
+  padding: 15px;
+}
+/*poner las fotos */
+.item-two-nosotros{
+  grid-column:1/4 ;
+  grid-row: 2/3;
+  padding: 10px;
+  background-color: rgb(8, 8, 8);
+  border-radius: 10px ;
+  display: flex;
+  justify-content:space-around;
+  /*direccion*/
+  flex-direction: row;
+ 
+  
+  
+
+}
+
+.item-two-nosotros img{
+ width: 250px;
+ height: auto;
+border-radius: 10px;
+
+}
+
+
+
+
+.item-three-nosotros{
+  grid-column: 1/4;
+  grid-row: 3/4;
+  background-color: rgb(17, 17, 17);
+  border-radius: 10px ;
+}
+.item-three-nosotros p {
+  color: #e3ebf0;
+  margin-top: 60px;
+  padding: 15px;
+  
+
+}
+
+@media (max-width:500px){
+  #nosotros{
+    grid-template-columns: 1fr;
+  }
+
+  .item-one-nosotros h2 {
+    font-size: 24px; 
+  }
+  
+  .item-one-nosotros p {
+    font-size: 14px; 
+    margin-top: 10px; 
+    padding: 10px; 
+  }
+  .item-two-nosotros {
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .item-two-nosotros img {
+    max-width: 90%; 
+    height: auto;
+    margin-bottom: 10px; 
+  }
+  
+  .item-three-nosotros p {
+    font-size: 14px; 
+    margin-top: 10px;
+    padding: 10px; 
+  }
+}
+
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<pagina stock>>>>>>>>>>>>>>>>>>>>>*/
+
+.stock-suplementos{
+  margin: 20px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px;
+    flex-wrap: wrap;
+  
+}
+
+.stocks{
+  background-color: rgb(10, 10, 10);
+grid-column: 1/3;
+grid-row: 1/3;
+/*relleno interno*/
+padding: 15px;
+border-radius: 10px; 
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+
+}
+.stocks h2{
+  color: aliceblue;
+  margin-bottom: 15px;
+}
+
+.stocks img{
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.stocks p{
+  color:  white;
+    margin-top: 15px;
+}
+
+
+.stock-suplementosveganos{
+  background-color: rgb(14, 14, 14);
+   grid-column: 3/5;
+   grid-row: 1/3;
+   padding: 15px;
+   border-radius: 10px; 
+   display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+ }
+ 
+.stock-suplementosveganos h2{
+  color: aliceblue;
+  margin-bottom: 15px;
+}
+
+.stock-suplementosveganos img{
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 15px;
+
+}
+
+
+.stock-suplementosveganos p{
+  color: white;
+  margin-top: 15px;
+}
+
+
+ .stock-ropa{
+  background-color: rgb(10, 10, 10);
+  grid-column: 1/3;
+  grid-row: 3/5;
+  padding: 15px;
+  border-radius: 10px; 
+  display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+.stock-ropa h2{
+
+  color: aliceblue;
+  margin-bottom: 25px;
+
+
+}
+
+.stock-ropa img{
+  width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+  
+
+}
+
+.stock-ropa p{
+  color: white;
+  margin-top: 15px;
+}
+
+.stock-intrumentos{
+  background-color: rgb(20, 20, 20);
+  grid-column: 3/5;
+  grid-row: 3/5;
+  padding: 15px;
+  border-radius: 10px; 
+  display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+
+.stock-intrumentos h2{
+  color: aliceblue;
+  margin-bottom: 25px;
+
+}
+
+.stock-intrumentos img{
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+}
+/*nose por q en la pagina el parrafo este me aparece en gris*/
+
+.stock-intrumentos p {
+  color: rgb(251, 251, 251);
+  margin-top: 15px;
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<pagina servicios>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.conteiner-servicios{
+  margin: 10px;
+  margin-top: 150px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,170px);
+  flex-wrap: wrap;
+  row-gap: 5px;
+  column-gap: 5px;
+  border-radius: 15px;
+
+}
+
+.seccion1{
+  background-color: rgb(10, 10, 10);
+  grid-row: 1/4;
+  grid-column: 1/2;
+  padding: 15px;
+  border-radius: 10px ;
+  color: white;
+  margin: 10px;
+  
+}
+
+
+.seccion1 h2{
+  margin: 15px;
+  text-align: center;
+ 
+}
+
+.seccion2{
+  background-color: rgb(2, 2, 2);
+  grid-row: 1/4;
+  grid-column: 2/3;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  margin: 10px;
+  
+}
+
+.seccion2 h2{
+  margin: 15px;
+  text-align: center;
+}
+
+
+.seccion3{
+  background-color: rgb(0, 0, 0);
+  grid-row: 1/4;
+  grid-column: 3/4;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  margin: 10px;
+  
+}
+
+
+.seccion3 h2{
+  margin: 15px;
+ text-align: center;
+}
+
+@media(max-width: 500px){
+  .conteiner-servicios {
+    grid-template-columns: 1fr;
+  }
+
+  .seccion1{ 
+    grid-column: auto;
+    grid-row: 120px;
+    margin: 10px;
+
+  }
+
+  .seccion1 h2{
+    font-size: 24px;
+    margin: 10px;
+  }
+.seccion1p{
+  font-size: 16px; 
+    margin: 10px; 
+}
+
+  .seccion2{
+    grid-column: auto;
+    grid-row: auto;
+    margin: 10px;
+  }
+
+  .seccion2 h2{
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .seccion2 p{
+    font-size: 16px; 
+    margin: 10px; 
+  }
+
+
+
+  .seccion3  {
+    grid-column: auto;
+    grid-row: auto;
+    margin: 10px;
+  }
+
+
+
+  .seccion3 h2{
+    font-size: 24px;
+    margin: 10px;
+  }
+
+.seccion3p{
+  font-size: 16px; 
+    margin: 10px; 
+  
+
+
+}
+}
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<pagina contacto>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+
+
+.container-contacto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.map {
+  width: 50%;
+  height: 50%;
+}
+
+.form {
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.input-group2 button {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
