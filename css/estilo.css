@@ -125,90 +125,90 @@ footer p {
 
 /* empieza presentacion
 --------------------------------*/
-.subtitulo-area{
-  background-color: rgb(8, 8, 8);
-  padding: 30px;
-  color: white;
-  margin-top:15px ;
-  
-}
-
-.subtitulo-area h2{
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.index-informacion{
-  background-color: black;
-  padding: 15px;
-  
-  display: flex;
-  flex-wrap: wrap;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(1,300px);
-  row-gap: 10px;
-  column-gap: 10px;
-}
 
 
-.caja-uno{
-  grid-column: 1/2;
-  grid-row: 1;
-  background-color:rgb(208, 212, 208);
-  color: rgb(14, 14, 14);
-  padding: 15px;
-  border-radius: 15px;
-}
 
-.caja-uno p{
-  margin-top: 15px;
-}
-
-
-.caja-dos{
-  grid-column: 2/3;
-  grid-row: 1;
-  background-color: rgb(208, 212, 208);
-  display: flex;
+#presentacion-conteiner{
+  display:flex;
+  padding: 80px;
   justify-content: center;
+  align-items: center;
+  gap: 24 px;
+  align-self: stretch;
+  background-color: black
+  
+  
+  
+}
+#presentacion-conteiner img{
   border-radius: 15px;
+}
+
+
+.energy{
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  max-width: 417px; /* Establece un ancho máximo */
+  height: auto; /* Ajusta la altura automáticamente según el contenido */
+  justify-content: center;
+  align-items:flex-start; /* Centra los elementos horizontalmente */
+  text-align:left; /* Centra el texto horizontalmente */
 
 }
-.caja-dos img{
-  width: 650px;
-  height: 300px;
-  border-radius: 15px;
+
+.energy h3{
+  margin-left: 10px;
+  color: white;
 }
+
+.energy p{
+  padding: 5px;
+  margin-left: 10px;
+  color: white;
+}
+
+
+
+
+
+
 
 
 @media (max-width: 500px) {
-  .index-informacion {
-    grid-template-columns: repeat(1, 1fr);
+  #presentacion-conteiner {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: black;
   }
 
-  .caja-uno {
-    grid-column: 1;
-    grid-row: 1;
+  #presentacion-conteiner img {
+    border-radius: 10px;
   }
 
-  .caja-uno p{
+  .energy {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
 
-  .caja-dos {
-    grid-column: 1;
-    grid-row: 2;
-
+  .energy h3 {
+    margin: 10px 0;
+    color: white;
   }
 
-  .caja-dos img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+  .energy p {
+    padding: 5px;
+    color: white;
+    margin: 10px 0;
   }
 }
 
