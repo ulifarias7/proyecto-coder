@@ -109,6 +109,16 @@ footer p {
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<pagina indexx>>>>>>>>>>>>>>>>*/
+
+#menu img {
+  padding: 5px;
+  /* Aplica un padding de 5px alrededor de la imagen */
+  background-color: #5a5757;
+  border-radius: 5px;
+}
+
+
+
 .navbar-nav{
   margin-right: 200px;
 }
@@ -117,10 +127,18 @@ footer p {
   margin-left: 20px;
 }
 
+
+
+#carouselExampleIndicators {
+  padding: 50px;
+  background-color: rgb(104, 101, 101);
+}
+
 .carousel-inner {
   max-height :50rem ; 
 
   }
+
   
 
 /* empieza presentacion
@@ -135,7 +153,7 @@ footer p {
   align-items: center;
   gap: 24 px;
   align-self: stretch;
-  background-color: black
+  background-color: rgb(105, 102, 102)
   
   
   
@@ -239,6 +257,8 @@ grid-template-rows: repeat(3,auto);
 /*espacios entre filas y columnas */
 row-gap: 20px;
 column-gap: 20px;
+background-color: #8c8787;
+padding: 20px;
 }
 
 
@@ -253,6 +273,8 @@ column-gap: 20px;
   align-self: auto;
   border-radius: 20px;
   background-color: rgb(245, 242, 242);
+  margin-right: 450px;
+
 }
 
 .nosotros-informacion{
@@ -292,6 +314,10 @@ column-gap: 20px;
 
 }
 
+.nosotros-informacion-img img{
+padding: 20px;
+background-color: rgb(115, 115, 121);
+}
 
 
 
@@ -309,8 +335,8 @@ column-gap: 20px;
   gap: 20px;
   align-self: auto;
   border-radius: 20px;
-  background-color: rgb(245, 242, 242);
-  
+  background-color:  rgb(245, 242, 242);
+  margin-left: 550px;
 }
 
 .nosotros-informacion2{
@@ -320,8 +346,8 @@ column-gap: 20px;
   justify-content: center;
   align-items: center;
   gap: 30px;
-}
 
+}
 .nosotros-informacion2 h3{
   font-size: 40px;
   font-weight: 370px;
@@ -329,7 +355,6 @@ column-gap: 20px;
   text-transform: lowercase;
   color: #000;
 }
-
 
 .nosotros-informacion2 p{
   font-size: 20px;
@@ -348,8 +373,17 @@ column-gap: 20px;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  border-radius: 15px;  
+ border-radius: 15px;
+  
 }
+.nosotros-informacion-img2 img{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: rgb(115, 115, 121);
+}
+
 
 
 
@@ -370,11 +404,12 @@ column-gap: 20px;
   align-self: auto;
   border-radius: 20px;
   background-color:  rgb(245, 242, 242);
+  margin-right: 760px;
 }
 
 .nosotros-informacion3{
   display: flex;
-  width: 600px;
+  width: 500px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -406,11 +441,18 @@ column-gap: 20px;
   justify-content: center;
   align-items: center;
   gap: 20px;
-border-radius: 15px;
+  border-radius: 15px;
   
 }
 
 
+.nosotros-informacion-img3 img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 20px;
+  background-color: rgb(115, 115, 121);
+  border-radius: 15px; /* Puedes aplicar el redondeo alrededor de la imagen si es necesario */
+}
 
 
 
