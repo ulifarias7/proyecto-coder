@@ -227,14 +227,8 @@ footer p {
 
 
 /*<<<<<<<<<<<<<<<<<<<<pagina nosotros>>>>>>>>>>>>>>>>>>>>>*/
-
-
-#nosotros{
-margin: 20px ;
-background-color: #e3ebf0;
-/*para q no se rompa la pantalla*/
-display: flex;
-flex-wrap: wrap;
+ 
+.contenedor-nosotros{
 /*para poder utilizar grillas */
 display: grid;
 /*grids columnas*/
@@ -243,102 +237,185 @@ grid-template-columns: repeat(3,1fr) ;
 grid-template-rows: repeat(3,auto);
 
 /*espacios entre filas y columnas */
-row-gap: 5px;
-column-gap: 5px;
-
+row-gap: 20px;
+column-gap: 20px;
 }
 
-.item-one-nosotros{
+
+
+.contenedor-nosotros-informacion{
   grid-column: 1/4;
   grid-row: 1/2;
-background-color: rgb(10, 10, 10);
-border-radius: 10px; 
+  display: flex;
+  padding: 30px;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: auto;
+  border-radius: 20px;
+  background-color: rgb(245, 242, 242);
 }
 
-.item-one-nosotros h2{
-  color: #e3ebf0;
-  margin-left: 10px;
+.nosotros-informacion{
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.nosotros-informacion h3{
+  font-size: 40px;
+  font-weight: 370px;
+  line-height: 35px;
+  text-transform: lowercase;
+  color: #000;
+}
+.nosotros-informacion p{
+  font-size: 20px;
+  font-weight: normal;
+  padding: 23px;
+  margin-top: 15px;
+  color: #000;
+}
 
 
+
+.nosotros-informacion-img{
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 15px;
+
 }
-.item-one-nosotros p{
-  color: #fcfafa;
-  margin-top: 26px;
-  margin-bottom: 10px;
-  padding: 15px;
-}
-/*poner las fotos */
-.item-two-nosotros{
+
+
+
+
+
+
+
+
+
+.contenedor-nosotros-informacion2{
   grid-column:1/4 ;
   grid-row: 2/3;
-  padding: 10px;
-  background-color: rgb(8, 8, 8);
-  border-radius: 10px ;
   display: flex;
-  justify-content:space-around;
-  /*direccion*/
-  flex-direction: row;
+  padding: 30px;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: auto;
+  border-radius: 20px;
+  background-color: rgb(245, 242, 242);
+  
+}
+
+.nosotros-informacion2{
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.nosotros-informacion2 h3{
+  font-size: 40px;
+  font-weight: 370px;
+  line-height: 35px;
+  text-transform: lowercase;
+  color: #000;
+}
+
+
+.nosotros-informacion2 p{
+  font-size: 20px;
+  font-weight: normal;
+  padding: 23px;
+  margin-top: 15px;
+  color: #000;
+}
+
+
+.nosotros-informacion-img2{
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 15px;  
+}
+
+
+
+
+
+
+
+
+
+.contenedor-nosotros-informacion3{
  
-  
-  
-
-}
-
-.item-two-nosotros img{
- width: 250px;
- height: auto;
-border-radius: 10px;
-
-}
-
-
-
-
-.item-three-nosotros{
   grid-column: 1/4;
   grid-row: 3/4;
-  background-color: rgb(17, 17, 17);
-  border-radius: 10px ;
-}
-.item-three-nosotros p {
-  color: #e3ebf0;
-  margin-top: 60px;
-  padding: 15px;
-  
-
+  display: flex;
+  padding: 30px;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: auto;
+  border-radius: 20px;
+  background-color:  rgb(245, 242, 242);
 }
 
-@media (max-width:500px){
-  #nosotros{
-    grid-template-columns: 1fr;
-  }
+.nosotros-informacion3{
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 
-  .item-one-nosotros h2 {
-    font-size: 24px; 
-  }
-  
-  .item-one-nosotros p {
-    font-size: 14px; 
-    margin-top: 10px; 
-    padding: 10px; 
-  }
-  .item-two-nosotros {
-    flex-direction: column; 
-    align-items: center; 
-  }
-  
-  .item-two-nosotros img {
-    max-width: 90%; 
-    height: auto;
-    margin-bottom: 10px; 
-  }
-  
-  .item-three-nosotros p {
-    font-size: 14px; 
-    margin-top: 10px;
-    padding: 10px; 
-  }
 }
+.nosotros-informacion3 h3{
+  font-size: 40px;
+  font-weight: 370px;
+  line-height: 35px;
+  text-transform: lowercase;
+  color: #000;
+}
+
+.nosotros-informacion3 p{
+  font-size: 20px;
+  font-weight: normal;
+  padding: 23px;
+  margin-top: 15px;
+  color: #000;
+}
+
+
+.nosotros-informacion-img3{
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+border-radius: 15px;
+  
+}
+
+
+
+
+
+
+
 
 
 
