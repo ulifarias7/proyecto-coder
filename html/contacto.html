@@ -23,91 +23,88 @@
     <title>contacto</title>
 </head>
 <body>
-   
-    <!--navbar-->
-    <!--<nav class="navbar navbar-expand-lg bg-body-tertiary p-3">-->
-     
-<header>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="menu"> 
-    <div class="container-fluid ">
-      <a class="navbar-brand"  href="../index.html"  target="_blank">
-        <img src="../img/loguito.jpg" alt="logo"  style="width:100px;">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse  justify-content-center " id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../html/nosotros.html">nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../html/servicios.html">servicios</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link " href="../html/stock.html" aria-current="page">
-              stock
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="../html/contacto.html">contacto</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light" id="menu">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html" target="_blank">
+          <img src="../img/logo/loguito.jpg" alt="logo" style="width:100px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../html/nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../html/servicios.html">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../html/stock.html">STOCK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../html/contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
-
-
-
-
-
-  <!-- Contenido -->
+    </nav>
+  </header>
   
-
   <div class="container-contacto">
     <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.542453458964!2d-64.18943188939875!3d-31.426729996643076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28efb09c73b%3A0x38fff97c6777ed31!2sBuenos%20Aires%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1694396403802!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.542453458964!2d-64.18943188939875!3d-31.426729996643076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28efb09c73b%3A0x38fff97c6777ed31!2sBuenos%20Aires%2C%20X5000%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1694396403802!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="form">
-      <h2>Contactanos</h2>
-      <div class="input-group">
-        <label for="name">Nombre</label>
-        <input type="text" id="name" placeholder="Tu nombre">
-      </div>
-      <div class="input-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Tu email">
-      </div>
-      <div class="input-group2">
-        <label for="message">Mensaje</label>
-        <textarea id="message" placeholder="Tu mensaje"></textarea>
-      </div>
-      <button type="submit">Enviar</button>
+      <h2 class="display-4">Contactanos</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Tu email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="message" placeholder="Tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
     </div>
   </div>
 
 
 
+<!-- BOTON WHATSAPP -->
+<div class="botonWhatsApp">
+  <a href="#"><img src="../img/logowpp/whatsapp icon.png" alt="whatsapp" /></a>
+</div> 
+<!--TERMINA BOTON WHATSAPP -->
 
 
-
-
-  <!-- Pie de página -->
-  <footer class=" w-100 d-flex  aling-items justify-content-center flex-wrap">
-    <p class=" fs-5 px-3 pt-3"> 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit non sed numquam tempora, et expedita aliquam totam laboriosam officiis, exercitationem blanditiis explicabo placeat illo nulla asperiores veritatis eligendi. Harum, necessitatibus?
-    </p>
-    <div id="ICONOS">
-      <a href="#"><i class="bi bi-facebook"></i></a>
-      <a href="#"></a><i class="bi bi-twitter"></i>
-      <a href="#"></a><i class="bi bi-instagram"></i>
-      <a href="#"></a><i class="bi bi-whatsapp"></i>
-    </div>
-  </footer>
+<!-- EMPIEZA FOOTER -->
+<footer>
+  <div class="logofooter">
+    <a href="../index.html"> <img src="../img/logo/loguito.jpg" alt="energy" /></a> 
+  </div>
+  <nav class="Iconos">
+    <ul>
+      <li> <a href="#"><img src="../img/footer/facebook.png" alt="Facebook" /></a></li>
+      <li> <a href="#"><img src="../img/footer/instagram.png" alt="instagram" /></a>  </li>
+      <li> <a href="#"><img src="../img/footer/tiktok.png" alt="TikTok" /></a>  </li>
+    </ul>
+  </nav>
+  <div> 
+    <p>© 2022 Energy casa de suplementos/ y acesoramiento personal</p>
+  </div>
+</footer>
+<!-- TERMINA FOOTER -->
   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 

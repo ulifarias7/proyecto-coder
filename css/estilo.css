@@ -6,125 +6,10 @@
 
 body{
   background-color: white;
-  font-family:sans-serif 
+  font-family: sans-serif;
+  
   /* poner una funte nueva */
 }
-
-
-
-/*----------------------------- MENU -----------------------------------------
-
-
-*/
-#menu li > a {   /*es un poco mas especifico para boostrap*/
-  font-size :18px;
-  font-weight : bold;
-  color: black;
-}
-
-/*
--------------------------carusel----------------------------------------
-*/
-.carousel-inner {
-max-height :39rem ; 
-
-}
-
-
-
-
-/*<------ foooter ---------------->*/
-
-
-
-footer{
-  background-color: #cccfd3;
-  min-height:100px;
-
-}
-
-footer p {
-  color : rgb(255, 255, 255);
-  text-align: center;
-  background-color: #000000;
- 
-}
-
-#iconos i {
-  font-size:26px;
-  padding: 0 8px;
- 
-}
-
- /* FOOTER */
-/* 
-footer {
-  margin-top: 1rem;
-  background-color: #e3e3e1;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-footer ul li {
-  display: inline;
-}
-
-footer ul li img {
-  width: 40px;
-  height: 40px;
-  transition: height 0.5s, width 0.5s;
-}
-
-footer ul li img:hover {
-  width: 50px;
-  height: 50px;
-}
-
-footer img {
-  width: 20%;
-  margin: 20px;
-}
-
- */
-
-
-
-/*<------ foooter ---------------->*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<escritorio>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-
 *{
   margin: 0;
   padding: 0;
@@ -132,16 +17,27 @@ footer img {
 }
 
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<pagina indexx>>>>>>>>>>>>>>>>*/
 
+
+
+/*---------- index pagina---------- */
+
+/* #menu {
+  background-color: #333;
+  padding: 20px 0
+}
+
+#menu li > a {  
+  font-size :18px;
+ 
+}
 #menu img {
   padding: 5px;
-  /* Aplica un padding de 5px alrededor de la imagen */
+  max-width: 120px;
+ 
   background-color: #5a5757;
  border-radius: 5px;
 }
-
-
 
 .navbar-nav{
   margin-right: 200px;
@@ -150,8 +46,38 @@ footer img {
 .navbar-nav .nav-item{
   margin-left: 20px;
 }
+.nav-link:hover {
+  color: gray }
+ */
 
+  /* Estilo del menú de navegación */
+  #menu {
+    background-color: #333;
+    padding: 20px 0;
+  }
+  
+  #menu .navbar-brand img {
+    max-width: 120px;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+  
+  #menu .navbar-nav .nav-link {
+    color: #111111;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  #menu .navbar-nav .nav-link:hover {
+    color: #726a6a;
+  }
+  
 
+/* carusel */
+
+.carousel-inner {
+max-height :39rem ; }
 
 #carouselExampleIndicators {
   padding: 50px;
@@ -165,14 +91,11 @@ footer img {
 
   
 
-/* empieza presentacion
---------------------------------*/
-
-
+/* empieza presentacion */
 
 #presentacion-conteiner{
   display:flex;
-  padding: 80px;
+  padding: 40px;
   justify-content: center;
   align-items: center;
   gap: 24 px;
@@ -184,19 +107,22 @@ footer img {
 }
 #presentacion-conteiner img{
   border-radius: 15px;
+  max-width: 45%; 
+  height: auto; 
+  max-height: 300px; 
+
 }
 
 
 .energy{
   display: flex;
   flex-direction: column;
-  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  
   max-width: 417px; /* Establece un ancho máximo */
-  height: auto; /* Ajusta la altura automáticamente según el contenido */
+  height: auto; 
   justify-content: center;
-  align-items:flex-start; /* Centra los elementos horizontalmente */
-  text-align:left; /* Centra el texto horizontalmente */
-
+  align-items:flex-start; 
+  text-align:left; 
 }
 
 .energy h3{
@@ -210,55 +136,81 @@ footer img {
   color: white;
 }
 
+  /* yermina presentacion */
+  
+  /* seccion de imagenes */
+  
 
-
-
-
-
-
-
-@media (max-width: 500px) {
-  #presentacion-conteiner {
+  .imagenesOpciones {
     display: flex;
-    padding: 20px;
+    flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 12px;
-    background-color: black;
-  }
+    margin-bottom: 60px; }
+    .imagenesOpciones img {
+      border-radius: 20px;
+      margin-bottom: 30px;
+      width: 300px;
+      transition: height 0.5s, width 0.5s; }
+    .imagenesOpciones img:hover {
+      width: 350px; }
+  /* termina seccion de imagenes  */
+  
+  
+/* boton de wpp */
 
-  #presentacion-conteiner img {
-    border-radius: 10px;
-  }
+.botonWhatsApp img {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px; }
 
-  .energy {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
 
-  .energy h3 {
-    margin: 10px 0;
-    color: white;
-  }
 
-  .energy p {
-    padding: 5px;
-    color: white;
-    margin: 10px 0;
-  }
+
+/* footer */
+
+
+footer {
+  background-color: #ebe4e2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
+footer .Iconos ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
 
+footer .Iconos ul li {
+  display: inline-block; /* Cambiado de "flex" a "inline-block" */
+  text-align: center;
+  margin: 0 10px; /* Agregado margen para separar los íconos */
+}
 
-/* termina presentacion!
---------------------------------*/
+footer .Iconos ul li img {
+  width: 40px;
+  height: 40px;
+  transition: height 0.5s, width 0.5s;
+}
 
+footer .Iconos ul li img:hover {
+  width: 50px;
+  height: 50px;
+}
+
+footer img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 15px;
+}
 
 
 
@@ -490,473 +442,113 @@ background-color: rgb(115, 115, 121);
 
 /*<<<<<<<<<<<<<<<<<<<<pagina stock>>>>>>>>>>>>>>>>>>>>>*/
 
-
-/* .galeria {
-  background-color: #e3e3e1;
+.conteiner-stock{
+  padding: 20px;
+  background-color: #5a5757;
+  background-image:  linear-gradient(to right,gray, black);
 }
 
-.galeria h3 {
-  padding: 1rem;
-}
-
-.hrGaleria {
-  width: 40%;
-  margin: auto;
-}
-
-.imagenes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.imgGaleria {
-  width: 15rem;
-  margin: 3rem;
-}
-
-.imagenes2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.imgGaleria2 {
-  width: 10rem;
-  margin: 1rem;
-}
-
-.botonWhatsApp img {
-  width: 4rem;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.stock-suplementos{
+.stockCards .card {
   margin: 20px;
-    background-color: rgb(255, 255, 255);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 5px;
-    flex-wrap: wrap;
-  
-}
+  border-color: rgb(14, 13, 13); }
 
-.stocks{
-  background-color: rgb(10, 10, 10);
-grid-column: 1/3;
-grid-row: 1/3;
-/*relleno interno*/
-padding: 15px;
-border-radius: 10px; 
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
+.stockCards p {
+  font-weight: bold;
+  color: #080808; }
 
-}
-.stocks h2{
-  color: aliceblue;
-  margin-bottom: 15px;
-}
-
-.stocks img{
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  border-radius: 15px;
-}
-
-.stocks p{
-  color:  white;
-    margin-top: 15px;
-}
-
-
-.stock-suplementosveganos{
-  background-color: rgb(14, 14, 14);
-   grid-column: 3/5;
-   grid-row: 1/3;
-   padding: 15px;
-   border-radius: 10px; 
-   display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
- }
- 
-.stock-suplementosveganos h2{
-  color: aliceblue;
-  margin-bottom: 15px;
-}
-
-.stock-suplementosveganos img{
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  border-radius: 15px;
-
-}
-
-
-.stock-suplementosveganos p{
-  color: white;
-  margin-top: 15px;
-}
-
-
- .stock-ropa{
-  background-color: rgb(10, 10, 10);
-  grid-column: 1/3;
-  grid-row: 3/5;
-  padding: 15px;
-  border-radius: 10px; 
-  display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-}
-
-.stock-ropa h2{
-
-  color: aliceblue;
-  margin-bottom: 25px;
-
-
-}
-
-.stock-ropa img{
-  width: 100%;
-    max-width: 350px;
-    height: auto;
-    border-radius: 15px;
-  
-
-}
-
-.stock-ropa p{
-  color: white;
-  margin-top: 15px;
-}
-
-.stock-intrumentos{
-  background-color: rgb(20, 20, 20);
-  grid-column: 3/5;
-  grid-row: 3/5;
-  padding: 15px;
-  border-radius: 10px; 
-  display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-}
-
-
-.stock-intrumentos h2{
-  color: aliceblue;
-  margin-bottom: 25px;
-
-}
-
-.stock-intrumentos img{
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 15px;
-}
-/*nose por q en la pagina el parrafo este me aparece en gris*/
-
-.stock-intrumentos p {
-  color: rgb(251, 251, 251);
-  margin-top: 15px;
-}
+.stockCards .btn {
+  background-color: #636160;
+  border-color: #080808; }
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<pagina servicios>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
-
-
-main {
-  background-color: #ffffff;
+.about-section, .today-section {
+  background-color: #726a6a;
+  padding: 80px 0;
 }
 
-section {
+.row-servicios {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 5px;
+  gap: 18px;
+  align-self: stretch;
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 18px;
-}
-
-.planes-suplementarios {
-  background-color: #f1f1f1;
-}
-
-.planes-alimenticios {
-  background-color: #f2f2f2;
-}
-
-.planes-entrenamiento {
-  background-color: #f3f3f3;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-}
-
-.titulo {
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.parrafo {
-  font-size: 16px;
-}
-
-.titulo, .parrafo {
-  text-align: center;
-}
-
-.img {
-  border-radius: 5px;
-}
-/*
-.conteiner-servicios{
-  margin: 10px;
-  margin-top: 150px;
-  background-color: rgb(255, 255, 255);
+.nuestros-servicios, .descripcion, .titulo-parrafo, .foto {
   display: flex;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(3,170px);
-  flex-wrap: wrap;
-  row-gap: 5px;
-  column-gap: 5px;
-  border-radius: 15px;
-
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 10px;
 }
 
-.seccion1{
-  background-color: rgb(10, 10, 10);
-  grid-row: 1/4;
-  grid-column: 1/2;
-  padding: 15px;
-  border-radius: 10px ;
-  color: white;
-  margin: 10px;
-  
+.nuestros-servicios h2, .nuestros-servicios h4, .titulo-parrafo h2 {
+  color: #fff;
 }
 
-
-.seccion1 h2{
-  margin: 15px;
-  text-align: center;
- 
+.descripcion, .titulo-parrafo p {
+  color: #fff;
+  max-width: 417px;
 }
 
-.seccion2{
-  background-color: rgb(2, 2, 2);
-  grid-row: 1/4;
-  grid-column: 2/3;
-  padding: 15px;
-  border-radius: 10px;
-  color: white;
-  margin: 10px;
-  
+.foto img {
+  border-radius: 25px;
+  padding: 20px;
+  background-color: #ebe4e2;
 }
-
-.seccion2 h2{
-  margin: 15px;
-  text-align: center;
-}
-
-
-.seccion3{
-  background-color: rgb(0, 0, 0);
-  grid-row: 1/4;
-  grid-column: 3/4;
-  padding: 15px;
-  border-radius: 10px;
-  color: white;
-  margin: 10px;
-  
-}
-
-
-.seccion3 h2{
-  margin: 15px;
- text-align: center;
-}
-
-@media(max-width: 500px){
-  .conteiner-servicios {
-    grid-template-columns: 1fr;
-  }
-
-  .seccion1{ 
-    grid-column: auto;
-    grid-row: 120px;
-    margin: 10px;
-
-  }
-
-  .seccion1 h2{
-    font-size: 24px;
-    margin: 10px;
-  }
-.seccion1p{
-  font-size: 16px; 
-    margin: 10px; 
-}
-
-  .seccion2{
-    grid-column: auto;
-    grid-row: auto;
-    margin: 10px;
-  }
-
-  .seccion2 h2{
-    font-size: 24px;
-    margin: 10px;
-  }
-
-  .seccion2 p{
-    font-size: 16px; 
-    margin: 10px; 
-  }
-
-
-
-  .seccion3  {
-    grid-column: auto;
-    grid-row: auto;
-    margin: 10px;
-  }
-
-
-
-  .seccion3 h2{
-    font-size: 24px;
-    margin: 10px;
-  }
-
-.seccion3p{
-  font-size: 16px; 
-    margin: 10px; 
-  
-
-
-}
-}
-
-*/
 
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<pagina contacto>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
 
-
 .container-contacto {
- padding: 15px;
-background-color: #5f5d5d;
-  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .map {
-  background-color: white;
-  padding: 20px;
-  width: 50%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
+  flex: 1;
+  margin: 10px;
 }
 
 .form {
-  width: 50%;
-  background-color: white;
-  padding: 20px;
-  border-radius: 15px;
-  
+  flex: 1;
+  margin: 10px;
 }
 
 .form h2 {
-  text-align: center;
+  font-size: 28px;
+  color: #333;
 }
 
-.input-group {
-  margin-bottom: 10px;
-}
-
-.input-group label {
+.form label {
   font-weight: bold;
+  color: #444;
 }
 
-input, textarea {
+.form input,
+.form textarea {
   width: 100%;
   padding: 10px;
-  border-radius: 5px;
+  margin: 5px 0;
   border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.input-group2 button {
-  background-color: #000;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
+.form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
   cursor: pointer;
-}
-
-@media (max-width: 500px) {
-  .container {
-    flex-direction: row;
-  }
-
-  .map {
-    width: 100%;
-    height: 100%;
-  }
-
-  .form {
-    width: 100%;
-  }
 }
