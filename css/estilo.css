@@ -1,22 +1,19 @@
 /*fuentes de fonts  con el @import y la url de la fuentes que queremos poner */
 /*----tamb lo de media query ---*/
 
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300&family=Raleway:wght@300&display=swap");
 
 
-body{
-  background-color: white;
-  font-family: sans-serif;
-  
-  /* poner una funte nueva */
-}
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
 
 }
-
-
+body{
+  font-family: 'Noto Sans', sans-serif;
+}
 
 
 
@@ -51,9 +48,11 @@ body{
  */
 
   /* Estilo del menú de navegación */
+
   #menu {
-    background-color: #333;
     padding: 20px 0;
+  
+
   }
   
   #menu .navbar-brand img {
@@ -67,6 +66,7 @@ body{
     margin: 0 15px;
     font-size: 18px;
     transition: color 0.3s;
+   
   }
   
   #menu .navbar-nav .nav-link:hover {
@@ -81,7 +81,9 @@ max-height :39rem ; }
 
 #carouselExampleIndicators {
   padding: 50px;
-  background-color: rgb(104, 101, 101);
+  background-color: rgb(250, 248, 248);
+  background: rgb(245,245,245);
+background: linear-gradient(0deg, rgba(245,245,245,0.10688025210084029) 37%, rgba(152,148,148,0.3029586834733894) 86%);
 }
 
 .carousel-inner {
@@ -100,7 +102,7 @@ max-height :39rem ; }
   align-items: center;
   gap: 24 px;
   align-self: stretch;
-  background-color: rgb(105, 102, 102)
+  background-color: rgb(250, 248, 248);
   
   
   
@@ -127,17 +129,38 @@ max-height :39rem ; }
 
 .energy h3{
   margin-left: 10px;
-  color: white;
+  color: rgb(17, 17, 17);
 }
 
 .energy p{
   padding: 5px;
   margin-left: 10px;
-  color: white;
+  color: rgb(10, 10, 10);
 }
 
   /* yermina presentacion */
   
+/* INFORMACION */
+
+.infoEnergy{
+  text-align: center;
+  background-color: #ebe4e2;
+  margin-bottom: 30px; }
+  .infoEnergy p {
+    margin-top: 30px;
+    padding-bottom: 30px; }
+  .infoEnergy h1 {
+    color: #070707;
+    font-size: 30px; }
+  .infoEnergy img {
+    margin-top: 30px;
+    width: 10%; }
+
+
+/* TERMINA INFORMACION */
+
+
+
   /* seccion de imagenes */
   
 
@@ -147,10 +170,13 @@ max-height :39rem ; }
     justify-content: center;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    
+   
+   }
     .imagenesOpciones img {
       border-radius: 20px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       width: 300px;
       transition: height 0.5s, width 0.5s; }
     .imagenesOpciones img:hover {
@@ -222,220 +248,64 @@ footer img {
 
 /*<<<<<<<<<<<<<<<<<<<<pagina nosotros>>>>>>>>>>>>>>>>>>>>>*/
  
-.contenedor-nosotros{
-/*para poder utilizar grillas */
-display: grid;
-/*grids columnas*/
-grid-template-columns: repeat(3,1fr) ;
-/*grids filas */
-grid-template-rows: repeat(3,auto);
 
-/*espacios entre filas y columnas */
-row-gap: 20px;
-column-gap: 20px;
-background-color: #8c8787;
-padding: 20px;
-}
-
-
-
-.contenedor-nosotros-informacion{
-  grid-column: 1/4;
-  grid-row: 1/2;
-  display: flex;
-  padding: 30px;
-  align-items: flex-start;
+.contenedor-nosotros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   gap: 20px;
-  align-self: auto;
-  border-radius: 20px;
-  background-color: rgb(245, 242, 242);
-  margin-right: 450px;
-
-}
-
-.nosotros-informacion{
-  display: flex;
-  width: 600px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-.nosotros-informacion h3{
-  font-size: 40px;
-  font-weight: 370px;
-  line-height: 35px;
-  text-transform: lowercase;
-  color: #000;
-}
-.nosotros-informacion p{
-  font-size: 20px;
-  font-weight: normal;
-  padding: 23px;
-  margin-top: 15px;
-  color: #000;
-}
-
-
-
-.nosotros-informacion-img{
-  display: flex;
-  width: auto;
-  height: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  border-radius: 15px;
-
-}
-
-.nosotros-informacion-img img{
-padding: 20px;
-background-color: rgb(115, 115, 121);
-}
-
-
-
-
-
-
-
-
-.contenedor-nosotros-informacion2{
-  grid-column:1/4 ;
-  grid-row: 2/3;
-  display: flex;
-  padding: 30px;
-  align-items: flex-start;
-  gap: 20px;
-  align-self: auto;
-  border-radius: 20px;
-  background-color:  rgb(245, 242, 242);
-  margin-left: 550px;
-}
-
-.nosotros-informacion2{
-  display: flex;
-  width: 600px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-
-}
-.nosotros-informacion2 h3{
-  font-size: 40px;
-  font-weight: 370px;
-  line-height: 35px;
-  text-transform: lowercase;
-  color: #000;
-}
-
-.nosotros-informacion2 p{
-  font-size: 20px;
-  font-weight: normal;
-  padding: 23px;
-  margin-top: 15px;
-  color: #000;
-}
-
-
-.nosotros-informacion-img2{
-  display: flex;
-  width: auto;
-  height: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
- border-radius: 15px;
-  
-}
-.nosotros-informacion-img2 img{
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 15px;
+  background-color: #8c8787;
   padding: 20px;
-  background-color: rgb(115, 115, 121);
 }
 
-
-
-
-
-
-
-
-
-
-.contenedor-nosotros-informacion3{
- 
-  grid-column: 1/4;
-  grid-row: 3/4;
+.contenedor-nosotros-informacion,
+.contenedor-nosotros-informacion2,
+.contenedor-nosotros-informacion3 {
   display: flex;
-  padding: 30px;
-  align-items: flex-start;
-  gap: 20px;
-  align-self: auto;
-  border-radius: 20px;
-  background-color:  rgb(245, 242, 242);
-  margin-right: 760px;
-}
-
-.nosotros-informacion3{
-  display: flex;
-  width: 500px;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-
-}
-.nosotros-informacion3 h3{
-  font-size: 40px;
-  font-weight: 370px;
-  line-height: 35px;
-  text-transform: lowercase;
-  color: #000;
-}
-
-.nosotros-informacion3 p{
-  font-size: 20px;
-  font-weight: normal;
-  padding: 23px;
-  margin-top: 15px;
-  color: #000;
-}
-
-
-.nosotros-informacion-img3{
-  display: flex;
-  width: auto;
-  height: auto;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 20px;
+  background-color: rgb(245, 242, 242);
+  padding: 20px;
   border-radius: 15px;
-  
 }
 
+.nosotros-informacion h3,
+.nosotros-informacion2 h3,
+.nosotros-informacion3 h3 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0;
+}
 
+.nosotros-informacion p,
+.nosotros-informacion2 p,
+.nosotros-informacion3 p {
+  font-size: 16px;
+  color: #000;
+  margin: 0;
+}
+
+.nosotros-informacion-img,
+.nosotros-informacion-img2,
+.nosotros-informacion-img3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(115, 115, 121);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.nosotros-informacion-img img,
+.nosotros-informacion-img2 img,
 .nosotros-informacion-img3 img {
   max-width: 100%;
   max-height: 100%;
-  padding: 20px;
-  background-color: rgb(115, 115, 121);
-  border-radius: 15px; /* Puedes aplicar el redondeo alrededor de la imagen si es necesario */
+  object-fit: cover;
+  border-radius: 15px;
 }
-
-
-
-
-
-
-
 
 
 
@@ -504,7 +374,17 @@ background-color: rgb(115, 115, 121);
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<pagina contacto>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-
+/*SECCION CONTACTO*/
+.contacto {
+  background-color: #686565c4;
+  text-align: center; }
+  .contacto img {
+    width: 70px;
+    margin-top: 10px; }
+  .contacto h1 {
+    color: #131111;
+    font-size: 30px;
+    padding-bottom: 10px; }
 
 .container-contacto {
   display: flex;
