@@ -1,6 +1,6 @@
 /* footer */
 footer {
-    background-color: #ebe4e2;
+    background-color: $color-secundario;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -76,6 +76,7 @@ footer {
       }
   
       p {
+        @extend.estilosP;
         font-size: 12px;
       }
     }

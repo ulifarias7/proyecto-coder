@@ -54,20 +54,22 @@
   /* Información */
   .infoEnergy {
     text-align: center;
-    background-color: #ebe4e2;
+    background-color:$color-contenedores;
     margin-bottom: 30px;
   
     p {
+      @extend.estilosP;
       margin-top: 30px;
       padding-bottom: 30px;
     }
   
     h1 {
-      color: #070707;
-      font-size: 30px;
+      color: map-get($stilos-titulos, colorFuente );
+      font-size: map-get($estilo-titulos, tamañoFuente);
     }
   
     img {
+      color: $color-textos;
       margin-top: 30px;
       width: 10%;
     }

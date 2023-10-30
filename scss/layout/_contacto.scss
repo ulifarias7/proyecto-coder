@@ -1,6 +1,6 @@
 /* SECCIÓN CONTACTO */
 .contacto {
-    background-color: #686565c4;
+    background-color: $color-contenedores;
     text-align: center;
   
     img {
@@ -9,9 +9,14 @@
     }
   
     h1 {
-      color: #131111;
+      color:map-get($estilo-titulos, colorFuente);
+      font-size: map-get($estilo-titulos, tamFuente);
+      @include margenes(10px, 5px);
+      animation-name: texto;
+      animation-duration: 2s;
       font-size: 30px;
       padding-bottom: 10px;
+
     }
   }
   

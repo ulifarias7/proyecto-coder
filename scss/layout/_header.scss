@@ -1,3 +1,4 @@
+@import "../components/variables";
 /* #menu {
   background-color: #333;
   padding: 20px 0
@@ -24,6 +25,8 @@
  */
 
   /* Estilo del menú de navegación */
+header{
+background-color: $color-secundario;
 
   #menu {
    
@@ -48,4 +51,5 @@
              .navbar-nav .nav-link:hover {
               color: #726a6a;
                   }
+}
 }

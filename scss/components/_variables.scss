@@ -1,17 +1,26 @@
 // variables 
-
-
-
+$color-principal: #e4b4a6;
+$color-contenedores: #afa29f9f;
+$color-secundario: #ebbeb7;
+$color-textos:black;
 
 
 
 //estilos h1
-
+$estilos-titulo:(colorFuente:#181717,tamañoFuente:30px);
 
 
 
 //mixin como parametros para margenes
 
-
+@mixin margenes($top, $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
 
 //extend para etiquetas p 
+.estilosP {
+    padding-left: 50px;
+    padding-right: 50px;
+    color: black;
+}
