@@ -1,0 +1,40 @@
+/* Página de Servicios */
+
+.about-section, .today-section {
+    background-color: #726a6a;
+    padding: 80px 0;
+  
+    .row-servicios {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 18px;
+      align-self: stretch;
+  
+      .nuestros-servicios, .descripcion, .titulo-parrafo, .foto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 10px;
+  
+        h2, h4 {
+          color: #fff;
+        }
+        
+        p {
+          color: #fff;
+          max-width: 417px;
+        }
+  
+        .foto img {
+          border-radius: 25px;
+          padding: 20px;
+          background-color: #ebe4e2;
+        }
+      }
+    }
+  }
+  /* Termina Página de Servicios */
+  

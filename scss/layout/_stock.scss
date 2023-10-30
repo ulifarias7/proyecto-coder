@@ -1,0 +1,27 @@
+/* Página de Stock */
+
+.conteiner-stock {
+    padding: 20px;
+    background-color: #5a5757;
+    background-image: linear-gradient(to right, gray, black);
+  
+    .stockCards {
+      .card {
+        margin: 20px;
+        border-color: rgb(14, 13, 13);
+  
+        p {
+          font-weight: bold;
+          color: #080808;
+        }
+  
+        .btn {
+          background-color: #636160;
+          border-color: #080808;
+        }
+      }
+    }
+  }
+  
+  /* Termina Página de Stock */
+  

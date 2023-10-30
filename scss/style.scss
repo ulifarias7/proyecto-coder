@@ -1,0 +1,20 @@
+
+//@import
+//base
+@import "./base/reset";
+
+
+//layout
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/contacto";
+@import "./layout/index";
+@import "./layout/nosotros";
+@import "./layout/servicios";
+@import "./layout/stock";
+@import "./layout/logowpp";
+
+// components 
+
+@import "./components/botones";
+@import "./components/variables"

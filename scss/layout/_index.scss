@@ -1,0 +1,99 @@
+/* Carusel */
+#carouselExampleIndicators {
+    padding: 50px;
+    background-color: rgb(250, 248, 248);
+    background: rgb(245, 245, 245);
+    background: linear-gradient(0deg, rgba(245, 245, 245, 0.10688025210084029) 37%, rgba(152, 148, 148, 0.3029586834733894) 86);
+  
+    .carousel-inner {
+      max-height: 50rem;
+    }
+  }
+  
+  /* Empieza presentación */
+  #presentacion-conteiner {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    background-color: rgb(250, 248, 248);
+  
+    img {
+      border-radius: 15px;
+      max-width: 45%;
+      height: auto;
+      max-height: 300px;
+    }
+  
+    .energy {
+      display: flex;
+      flex-direction: column;
+      max-width: 417px; /* Establece un ancho máximo */
+      height: auto;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+  
+      h3 {
+        margin-left: 10px;
+        color: rgb(17, 17, 17);
+      }
+  
+      p {
+        padding: 5px;
+        margin-left: 10px;
+        color: rgb(10, 10, 10);
+      }
+    }
+  }
+  
+  /* Termina presentación */
+  
+  /* Información */
+  .infoEnergy {
+    text-align: center;
+    background-color: #ebe4e2;
+    margin-bottom: 30px;
+  
+    p {
+      margin-top: 30px;
+      padding-bottom: 30px;
+    }
+  
+    h1 {
+      color: #070707;
+      font-size: 30px;
+    }
+  
+    img {
+      margin-top: 30px;
+      width: 10%;
+    }
+  }
+  
+  /* Termina información */
+  
+  /* Sección de imágenes */
+  .imagenesOpciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 60px;
+  
+    img {
+      border-radius: 20px;
+      margin-bottom: 20px;
+      width: 300px;
+      transition: height 0.5s, width 0.5s;
+  
+      &:hover {
+        width: 350px;
+      }
+    }
+  }
+  /* Termina sección de imágenes */
+  

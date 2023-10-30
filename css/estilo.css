@@ -1,204 +1,59 @@
-/*fuentes de fonts  con el @import y la url de la fuentes que queremos poner */
-/*----tamb lo de media query ---*/
-
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
-
-
-*{
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap");
+* {
   margin: 0;
   padding: 0;
-
-}
-body{
-  font-family: 'Noto Sans', sans-serif;
+  box-sizing: border-box;
 }
 
-
-
-/*---------- index pagina---------- */
+body {
+  font-family: "Noto Sans", sans-serif;
+}
 
 /* #menu {
   background-color: #333;
   padding: 20px 0
 }
-
 #menu li > a {  
   font-size :18px;
- 
+
 }
 #menu img {
   padding: 5px;
   max-width: 120px;
- 
+
   background-color: #5a5757;
  border-radius: 5px;
 }
-
 .navbar-nav{
   margin-right: 200px;
 }
-
 .navbar-nav .nav-item{
   margin-left: 20px;
 }
 .nav-link:hover {
   color: gray }
  */
-
-  /* Estilo del menú de navegación */
-
-  #menu {
-    padding: 20px 0;
-  
-
-  }
-  
-  #menu .navbar-brand img {
-    max-width: 120px;
-    border-radius: 20px;
-    border: 2px solid black;
-  }
-  
-  #menu .navbar-nav .nav-link {
-    color: #111111;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s;
-   
-  }
-  
-  #menu .navbar-nav .nav-link:hover {
-    color: #726a6a;
-  }
-  
-
-/* carusel */
-
-.carousel-inner {
-max-height :39rem ; }
-
-#carouselExampleIndicators {
-  padding: 50px;
-  background-color: rgb(250, 248, 248);
-  background: rgb(245,245,245);
-background: linear-gradient(0deg, rgba(245,245,245,0.10688025210084029) 37%, rgba(152,148,148,0.3029586834733894) 86%);
+/* Estilo del menú de navegación */
+#menu {
+  padding: 20px 0;
+  border: 2px solid black;
 }
-
-.carousel-inner {
-  max-height :50rem ; 
-
-  }
-
-  
-
-/* empieza presentacion */
-
-#presentacion-conteiner{
-  display:flex;
-  padding: 40px;
-  justify-content: center;
-  align-items: center;
-  gap: 24 px;
-  align-self: stretch;
-  background-color: rgb(250, 248, 248);
-  
-  
-  
+#menu .navbar-brand img {
+  max-width: 120px;
+  border-radius: 20px;
 }
-#presentacion-conteiner img{
-  border-radius: 15px;
-  max-width: 45%; 
-  height: auto; 
-  max-height: 300px; 
-
+#menu .navbar-nav .nav-link {
+  color: #111111;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s;
 }
-
-
-.energy{
-  display: flex;
-  flex-direction: column;
-  
-  max-width: 417px; /* Establece un ancho máximo */
-  height: auto; 
-  justify-content: center;
-  align-items:flex-start; 
-  text-align:left; 
+#menu .navbar-nav .nav-link:hover {
+  color: #726a6a;
 }
-
-.energy h3{
-  margin-left: 10px;
-  color: rgb(17, 17, 17);
-}
-
-.energy p{
-  padding: 5px;
-  margin-left: 10px;
-  color: rgb(10, 10, 10);
-}
-
-  /* yermina presentacion */
-  
-/* INFORMACION */
-
-.infoEnergy{
-  text-align: center;
-  background-color: #ebe4e2;
-  margin-bottom: 30px; }
-  .infoEnergy p {
-    margin-top: 30px;
-    padding-bottom: 30px; }
-  .infoEnergy h1 {
-    color: #070707;
-    font-size: 30px; }
-  .infoEnergy img {
-    margin-top: 30px;
-    width: 10%; }
-
-
-/* TERMINA INFORMACION */
-
-
-
-  /* seccion de imagenes */
-  
-
-  .imagenesOpciones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 60px;
-    
-   
-   }
-    .imagenesOpciones img {
-      border-radius: 20px;
-      margin-bottom: 20px;
-      width: 300px;
-      transition: height 0.5s, width 0.5s; }
-    .imagenesOpciones img:hover {
-      width: 350px; }
-  /* termina seccion de imagenes  */
-  
-  
-/* boton de wpp */
-
-.botonWhatsApp img {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  bottom: 10px;
-  right: 10px; }
-
-
-
 
 /* footer */
-
-
 footer {
   background-color: #ebe4e2;
   display: flex;
@@ -206,31 +61,26 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 }
-
 footer .Iconos ul {
   list-style: none;
   padding: 0;
   display: flex;
   align-items: center;
 }
-
 footer .Iconos ul li {
-  display: inline-block; /* Cambiado de "flex" a "inline-block" */
+  display: inline-block;
   text-align: center;
-  margin: 0 10px; /* Agregado margen para separar los íconos */
+  margin: 0 10px;
 }
-
 footer .Iconos ul li img {
   width: 40px;
   height: 40px;
   transition: height 0.5s, width 0.5s;
 }
-
 footer .Iconos ul li img:hover {
   width: 50px;
   height: 50px;
 }
-
 footer img {
   width: 100px;
   height: 100px;
@@ -238,17 +88,176 @@ footer img {
   border-radius: 15px;
 }
 
+/* EMPIEZA FOOTER */
+footer .logofooter a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+footer .logofooter .Iconos ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+footer .logofooter .Iconos ul li a img {
+  width: 40px;
+  height: 40px;
+  transition: height 0.5s, width 0.5s;
+}
+footer .logofooter .Iconos ul li a img:hover {
+  width: 50px;
+  height: 50px;
+}
+footer .logofooter p {
+  font-size: 12px;
+}
 
+/* TERMINA FOOTER */
+/* SECCIÓN CONTACTO */
+.contacto {
+  background-color: rgba(104, 101, 101, 0.768627451);
+  text-align: center;
+}
+.contacto img {
+  width: 70px;
+  margin-top: 10px;
+}
+.contacto h1 {
+  color: #131111;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
 
+.container-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.container-contacto .map {
+  flex: 1;
+  margin: 10px;
+}
+.container-contacto .form {
+  flex: 1;
+  margin: 10px;
+}
+.container-contacto .form h2 {
+  font-size: 28px;
+  color: #333;
+}
+.container-contacto .form label {
+  font-weight: bold;
+  color: #444;
+}
+.container-contacto .form input,
+.container-contacto .form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.container-contacto .form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+}
 
+/* Carusel */
+#carouselExampleIndicators {
+  padding: 50px;
+  background-color: rgb(250, 248, 248);
+  background: rgb(245, 245, 245);
+  background: linear-gradient(0deg, rgba(245, 245, 245, 0.1068802521) 37%, rgba(152, 148, 148, 0.3029586835) 86);
+}
+#carouselExampleIndicators .carousel-inner {
+  max-height: 50rem;
+}
 
+/* Empieza presentación */
+#presentacion-conteiner {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  background-color: rgb(250, 248, 248);
+}
+#presentacion-conteiner img {
+  border-radius: 15px;
+  max-width: 45%;
+  height: auto;
+  max-height: 300px;
+}
+#presentacion-conteiner .energy {
+  display: flex;
+  flex-direction: column;
+  max-width: 417px; /* Establece un ancho máximo */
+  height: auto;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+#presentacion-conteiner .energy h3 {
+  margin-left: 10px;
+  color: rgb(17, 17, 17);
+}
+#presentacion-conteiner .energy p {
+  padding: 5px;
+  margin-left: 10px;
+  color: rgb(10, 10, 10);
+}
 
+/* Termina presentación */
+/* Información */
+.infoEnergy {
+  text-align: center;
+  background-color: #ebe4e2;
+  margin-bottom: 30px;
+}
+.infoEnergy p {
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+.infoEnergy h1 {
+  color: #070707;
+  font-size: 30px;
+}
+.infoEnergy img {
+  margin-top: 30px;
+  width: 10%;
+}
 
+/* Termina información */
+/* Sección de imágenes */
+.imagenesOpciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.imagenesOpciones img {
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  transition: height 0.5s, width 0.5s;
+}
+.imagenesOpciones img:hover {
+  width: 350px;
+}
 
-
-/*<<<<<<<<<<<<<<<<<<<<pagina nosotros>>>>>>>>>>>>>>>>>>>>>*/
- 
-
+/* Termina sección de imágenes */
+/* Página Nosotros */
 .contenedor-nosotros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -297,7 +306,6 @@ footer img {
   padding: 20px;
   border-radius: 15px;
 }
-
 .nosotros-informacion-img img,
 .nosotros-informacion-img2 img,
 .nosotros-informacion-img3 img {
@@ -307,47 +315,20 @@ footer img {
   border-radius: 15px;
 }
 
-
-
-
-/*<<<<<<<<<<<<<<<<<<<<pagina stock>>>>>>>>>>>>>>>>>>>>>*/
-
-.conteiner-stock{
-  padding: 20px;
-  background-color: #5a5757;
-  background-image:  linear-gradient(to right,gray, black);
-}
-
-.stockCards .card {
-  margin: 20px;
-  border-color: rgb(14, 13, 13); }
-
-.stockCards p {
-  font-weight: bold;
-  color: #080808; }
-
-.stockCards .btn {
-  background-color: #636160;
-  border-color: #080808; }
-
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<pagina servicios>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-
+/* Termina Página Nosotros */
+/* Página de Servicios */
 .about-section, .today-section {
   background-color: #726a6a;
   padding: 80px 0;
 }
-
-.row-servicios {
+.about-section .row-servicios, .today-section .row-servicios {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 18px;
   align-self: stretch;
 }
-
-.nuestros-servicios, .descripcion, .titulo-parrafo, .foto {
+.about-section .row-servicios .nuestros-servicios, .about-section .row-servicios .descripcion, .about-section .row-servicios .titulo-parrafo, .about-section .row-servicios .foto, .today-section .row-servicios .nuestros-servicios, .today-section .row-servicios .descripcion, .today-section .row-servicios .titulo-parrafo, .today-section .row-servicios .foto {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -355,80 +336,49 @@ footer img {
   padding: 20px;
   gap: 10px;
 }
-
-.nuestros-servicios h2, .nuestros-servicios h4, .titulo-parrafo h2 {
+.about-section .row-servicios .nuestros-servicios h2, .about-section .row-servicios .nuestros-servicios h4, .about-section .row-servicios .descripcion h2, .about-section .row-servicios .descripcion h4, .about-section .row-servicios .titulo-parrafo h2, .about-section .row-servicios .titulo-parrafo h4, .about-section .row-servicios .foto h2, .about-section .row-servicios .foto h4, .today-section .row-servicios .nuestros-servicios h2, .today-section .row-servicios .nuestros-servicios h4, .today-section .row-servicios .descripcion h2, .today-section .row-servicios .descripcion h4, .today-section .row-servicios .titulo-parrafo h2, .today-section .row-servicios .titulo-parrafo h4, .today-section .row-servicios .foto h2, .today-section .row-servicios .foto h4 {
   color: #fff;
 }
-
-.descripcion, .titulo-parrafo p {
+.about-section .row-servicios .nuestros-servicios p, .about-section .row-servicios .descripcion p, .about-section .row-servicios .titulo-parrafo p, .about-section .row-servicios .foto p, .today-section .row-servicios .nuestros-servicios p, .today-section .row-servicios .descripcion p, .today-section .row-servicios .titulo-parrafo p, .today-section .row-servicios .foto p {
   color: #fff;
   max-width: 417px;
 }
-
-.foto img {
+.about-section .row-servicios .nuestros-servicios .foto img, .about-section .row-servicios .descripcion .foto img, .about-section .row-servicios .titulo-parrafo .foto img, .about-section .row-servicios .foto .foto img, .today-section .row-servicios .nuestros-servicios .foto img, .today-section .row-servicios .descripcion .foto img, .today-section .row-servicios .titulo-parrafo .foto img, .today-section .row-servicios .foto .foto img {
   border-radius: 25px;
   padding: 20px;
   background-color: #ebe4e2;
 }
 
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<pagina contacto>>>>>>>>>>>>>>>>>>>>>>>>>*/
-
-/*SECCION CONTACTO*/
-.contacto {
-  background-color: #686565c4;
-  text-align: center; }
-  .contacto img {
-    width: 70px;
-    margin-top: 10px; }
-  .contacto h1 {
-    color: #131111;
-    font-size: 30px;
-    padding-bottom: 10px; }
-
-.container-contacto {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Termina Página de Servicios */
+/* Página de Stock */
+.conteiner-stock {
   padding: 20px;
+  background-color: #5a5757;
+  background-image: linear-gradient(to right, gray, black);
 }
-
-.map {
-  flex: 1;
-  margin: 10px;
+.conteiner-stock .stockCards .card {
+  margin: 20px;
+  border-color: rgb(14, 13, 13);
 }
-
-.form {
-  flex: 1;
-  margin: 10px;
-}
-
-.form h2 {
-  font-size: 28px;
-  color: #333;
-}
-
-.form label {
+.conteiner-stock .stockCards .card p {
   font-weight: bold;
-  color: #444;
+  color: #080808;
+}
+.conteiner-stock .stockCards .card .btn {
+  background-color: #636160;
+  border-color: #080808;
 }
 
-.form input,
-.form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+/* Termina Página de Stock */
+/* BOTON WHATSAPP */
+.botonWhatsApp a img {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 
-.form button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  cursor: pointer;
-}
+/* TERMINA BOTON WHATSAPP */
+
+/*# sourceMappingURL=estilo.css.map */
