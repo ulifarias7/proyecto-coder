@@ -1,3 +1,10 @@
+@import "../components/variables";
+$estilo-titulos: (
+  colorFuente:#181717,      
+  tamañoFuente: 30px,     
+ 
+);
+
 /* Carusel */
 #carouselExampleIndicators {
     padding: 50px;
@@ -44,7 +51,7 @@
       p {
         padding: 5px;
         margin-left: 10px;
-        color: rgb(10, 10, 10);
+        color:$color-textos;
       }
     }
   }
@@ -54,7 +61,7 @@
   /* Información */
   .infoEnergy {
     text-align: center;
-    background-color:$color-contenedores;
+    background-color: $color-secundario;
     margin-bottom: 30px;
   
     p {
@@ -64,8 +71,8 @@
     }
   
     h1 {
-      color: map-get($stilos-titulos, colorFuente );
-      font-size: map-get($estilo-titulos, tamañoFuente);
+      color:map-get($estilo-titulos, colorFuente);
+            font-size: map-get($estilo-titulos, tamFuente);
     }
   
     img {

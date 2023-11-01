@@ -1,3 +1,4 @@
+@import "../components/variables";
 /* Página de Stock */
 
 .conteiner-stock {
@@ -16,8 +17,9 @@
         }
   
         .btn {
-          background-color: $color-secundario;
+          background-color: $color-contenedores;
           border-color: #080808;
+          color: #080808;
         }
       }
     }

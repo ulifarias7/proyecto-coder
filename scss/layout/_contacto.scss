@@ -1,6 +1,10 @@
 /* SECCIÓN CONTACTO */
+//estilos h1
+@import "../components/variables";
+
+
 .contacto {
-    background-color: $color-contenedores;
+   background-color: $color-secundario;
     text-align: center;
   
     img {
