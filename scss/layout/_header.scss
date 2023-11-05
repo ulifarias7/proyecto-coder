@@ -33,9 +33,10 @@ $color-secundario: #ebbeb7; //
 .header { // necesito pintar el header de ese  color pero no puedo 
   background-color: $color-secundario; 
 
+
   #menu {
       padding: 20px 0;
-      border: 2px solid black;
+      border-bottom: 1px solid black;
 
       .navbar-brand img {
           max-width: 120px;
