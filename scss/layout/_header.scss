@@ -26,8 +26,7 @@
 
   /* Estilo del menú de navegación */
 
-// Define tus variables de color
-$color-secundario: #ebbeb7; // 
+
 
 
 .header { // necesito pintar el header de ese  color pero no puedo 
@@ -36,8 +35,7 @@ $color-secundario: #ebbeb7; //
 
   #menu {
       padding: 20px 0;
-      border-bottom: 1px solid black;
-
+     border-bottom: 1px solid black;
       .navbar-brand img {
           max-width: 120px;
           border-radius: 20px;

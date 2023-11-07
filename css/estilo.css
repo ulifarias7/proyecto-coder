@@ -42,7 +42,7 @@ body {
  */
 /* Estilo del menú de navegación */
 .header {
-  background-color: #ebbeb7;
+  background-color: #53946e;
 }
 .header #menu {
   padding: 20px 0;
@@ -70,7 +70,7 @@ body {
 
 /* footer */
 footer {
-  background-color: #ebbeb7;
+  background-color: #53946e;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -137,7 +137,7 @@ footer .logofooter p {
 }
 
 .contacto {
-  background-color: #ebbeb7;
+  background-color: #53946e;
   text-align: center;
 }
 .contacto img {
@@ -160,7 +160,7 @@ footer .logofooter p {
   flex-wrap: wrap;
   justify-content: center;
   margin: 20px;
-  background-color: #fff;
+  background-color: rgba(217, 233, 215, 0.624);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
@@ -205,8 +205,7 @@ footer .logofooter p {
 /* Carusel */
 #carouselExampleIndicators {
   padding: 50px;
-  background-color: rgb(250, 248, 248);
-  background: rgb(245, 245, 245);
+  background-color: #53946e;
   background: linear-gradient(0deg, rgba(245, 245, 245, 0.1068802521) 37%, rgba(152, 148, 148, 0.3029586835) 86);
 }
 #carouselExampleIndicators .carousel-inner {
@@ -221,13 +220,15 @@ footer .logofooter p {
   align-items: center;
   gap: 24px;
   align-self: stretch;
-  background-color: rgb(250, 248, 248);
+  background-color: rgba(217, 233, 215, 0.624);
 }
 #presentacion-conteiner img {
   border-radius: 15px;
   max-width: 45%;
   height: auto;
   max-height: 300px;
+  padding: 10px;
+  background-color: rgb(182, 224, 165);
 }
 #presentacion-conteiner .energy {
   display: flex;
@@ -252,7 +253,7 @@ footer .logofooter p {
 /* Información */
 .infoEnergy {
   text-align: center;
-  background-color: #ebbeb7;
+  background-color: #53946e;
   margin-bottom: 30px;
 }
 .infoEnergy p {
@@ -260,7 +261,8 @@ footer .logofooter p {
   padding-bottom: 30px;
 }
 .infoEnergy h1 {
-  color: #181717;
+  color: #050505;
+  font-size: 30px;
 }
 .infoEnergy img {
   color: black;
@@ -277,6 +279,7 @@ footer .logofooter p {
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 60px;
+  background-color: rgba(217, 233, 215, 0.624);
 }
 .imagenesOpciones img {
   border-radius: 20px;
@@ -289,25 +292,18 @@ footer .logofooter p {
 }
 
 /* Termina sección de imágenes */
-.estilosP, footer .logofooter p, .infoEnergy p {
-  padding-left: 50px;
-  padding-right: 50px;
-  color: black;
-}
-
-/* Página Nosotros */
+/* Estilos para la página Nosotros */
 .contenedor-nosotros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 20px;
-  background-color: rgba(165, 159, 157, 0.6235294118);
+  background-color: #53946e;
   padding: 20px;
 }
-
-.contenedor-nosotros-informacion,
-.contenedor-nosotros-informacion2,
-.contenedor-nosotros-informacion3 {
+.contenedor-nosotros .contenedor-nosotros-informacion,
+.contenedor-nosotros .contenedor-nosotros-informacion2,
+.contenedor-nosotros .contenedor-nosotros-informacion3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -315,38 +311,49 @@ footer .logofooter p {
   background-color: rgb(245, 242, 242);
   padding: 20px;
   border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-
-.nosotros-informacion h3,
-.nosotros-informacion2 h3,
-.nosotros-informacion3 h3 {
+.contenedor-nosotros .contenedor-nosotros-informacion:hover,
+.contenedor-nosotros .contenedor-nosotros-informacion2:hover,
+.contenedor-nosotros .contenedor-nosotros-informacion3:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.contenedor-nosotros .contenedor-nosotros-informacion h3,
+.contenedor-nosotros .contenedor-nosotros-informacion2 h3,
+.contenedor-nosotros .contenedor-nosotros-informacion3 h3 {
   font-size: 24px;
   text-transform: uppercase;
-  color: #000;
+  color: #333;
   margin: 0;
 }
-
-.nosotros-informacion p,
-.nosotros-informacion2 p,
-.nosotros-informacion3 p {
+.contenedor-nosotros .contenedor-nosotros-informacion p,
+.contenedor-nosotros .contenedor-nosotros-informacion2 p,
+.contenedor-nosotros .contenedor-nosotros-informacion3 p {
   font-size: 16px;
-  color: #000;
+  color: #555;
   margin: 0;
 }
-
-.nosotros-informacion-img,
-.nosotros-informacion-img2,
-.nosotros-informacion-img3 {
+.contenedor-nosotros .nosotros-informacion-img,
+.contenedor-nosotros .nosotros-informacion-img2,
+.contenedor-nosotros .nosotros-informacion-img3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(115, 115, 121);
+  background-color: rgb(182, 224, 165);
   padding: 20px;
   border-radius: 15px;
+  transition: background-color 0.3s;
 }
-.nosotros-informacion-img img,
-.nosotros-informacion-img2 img,
-.nosotros-informacion-img3 img {
+.contenedor-nosotros .nosotros-informacion-img:hover,
+.contenedor-nosotros .nosotros-informacion-img2:hover,
+.contenedor-nosotros .nosotros-informacion-img3:hover {
+  background-color: #444;
+}
+.contenedor-nosotros .nosotros-informacion-img img,
+.contenedor-nosotros .nosotros-informacion-img2 img,
+.contenedor-nosotros .nosotros-informacion-img3 img {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -354,46 +361,58 @@ footer .logofooter p {
 }
 
 /* Termina Página Nosotros */
-.estilosP, footer .logofooter p, .infoEnergy p {
-  padding-left: 50px;
-  padding-right: 50px;
-  color: black;
+/* Estilos para la página de Servicios */
+main {
+  background-color: rgba(217, 233, 215, 0.624);
 }
-
-/* Página de Servicios */
-.about-section, .today-section {
-  background-color: rgba(165, 159, 157, 0.6235294118);
+main .about-section, main .today-section {
   padding: 80px 0;
+  text-align: center; /* Centra el contenido */
 }
-.about-section .row-servicios, .today-section .row-servicios {
+main .about-section .row-servicios, main .today-section .row-servicios {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 18px;
   align-self: stretch;
 }
-.about-section .row-servicios .nuestros-servicios, .about-section .row-servicios .descripcion, .about-section .row-servicios .titulo-parrafo, .about-section .row-servicios .foto, .today-section .row-servicios .nuestros-servicios, .today-section .row-servicios .descripcion, .today-section .row-servicios .titulo-parrafo, .today-section .row-servicios .foto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px;
-  gap: 10px;
+main .about-section .row-servicios > div, main .today-section .row-servicios > div {
+  flex: 1;
+  padding: 30px;
+  background-color: rgb(182, 224, 165);
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+  transition-transform: 0.3s, box-shadow 0.3s;
 }
-.about-section .row-servicios .nuestros-servicios h2, .about-section .row-servicios .nuestros-servicios h4, .about-section .row-servicios .descripcion h2, .about-section .row-servicios .descripcion h4, .about-section .row-servicios .titulo-parrafo h2, .about-section .row-servicios .titulo-parrafo h4, .about-section .row-servicios .foto h2, .about-section .row-servicios .foto h4, .today-section .row-servicios .nuestros-servicios h2, .today-section .row-servicios .nuestros-servicios h4, .today-section .row-servicios .descripcion h2, .today-section .row-servicios .descripcion h4, .today-section .row-servicios .titulo-parrafo h2, .today-section .row-servicios .titulo-parrafo h4, .today-section .row-servicios .foto h2, .today-section .row-servicios .foto h4 {
-  color: #fff;
+main .about-section .row-servicios > div:hover, main .today-section .row-servicios > div:hover {
+  transform: scale(1.02); /* Agranda el elemento al pasar el mouse por encima */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Aumenta la intensidad de la sombra al pasar el mouse por encima */
 }
-.about-section .row-servicios .nuestros-servicios p, .about-section .row-servicios .descripcion p, .about-section .row-servicios .titulo-parrafo p, .about-section .row-servicios .foto p, .today-section .row-servicios .nuestros-servicios p, .today-section .row-servicios .descripcion p, .today-section .row-servicios .titulo-parrafo p, .today-section .row-servicios .foto p {
-  color: black;
-  max-width: 417px;
+main .about-section .row-servicios > div h2, main .today-section .row-servicios > div h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 0;
+  color: #070707;
 }
-.about-section .row-servicios .nuestros-servicios .foto img, .about-section .row-servicios .descripcion .foto img, .about-section .row-servicios .titulo-parrafo .foto img, .about-section .row-servicios .foto .foto img, .today-section .row-servicios .nuestros-servicios .foto img, .today-section .row-servicios .descripcion .foto img, .today-section .row-servicios .titulo-parrafo .foto img, .today-section .row-servicios .foto .foto img {
-  border-radius: 25px;
-  padding: 20px;
-  background-color: #ebe4e2;
+main .about-section .row-servicios > div h4, main .today-section .row-servicios > div h4 {
+  font-size: 18px;
+  margin: 0;
+  color: #131212;
+}
+main .about-section .row-servicios > div p, main .today-section .row-servicios > div p {
+  font-size: 16px;
+  max-width: 450px;
+  margin: 0;
+  color: #111111;
+}
+main .about-section .row-servicios > div .foto img, main .today-section .row-servicios > div .foto img {
+  border-radius: 15px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
-/* Termina Página de Servicios */
+/* Termina Estilos para la página de Servicios */
 .estilosP, footer .logofooter p, .infoEnergy p {
   padding-left: 50px;
   padding-right: 50px;
@@ -404,20 +423,33 @@ footer .logofooter p {
 .conteiner-stock {
   padding: 20px;
   background-color: #5a5757;
-  background-image: linear-gradient(to right, gray, black);
+  background-image: linear-gradient(to right, rgb(180, 218, 166), rgb(116, 148, 103));
+  color: #111111;
+  text-align: center;
+}
+.conteiner-stock .stockCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .conteiner-stock .stockCards .card {
-  margin: 20px;
-  border-color: rgb(14, 13, 13);
-}
-.conteiner-stock .stockCards .card p {
-  font-weight: bold;
+  margin: 10px;
+  border: 1px solid #080808;
+  background-color: #fff;
   color: #080808;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.conteiner-stock .stockCards .card .card-title {
+  font-size: 1.25rem;
+}
+.conteiner-stock .stockCards .card .card-text {
+  font-weight: bold;
 }
 .conteiner-stock .stockCards .card .btn {
-  background-color: rgba(165, 159, 157, 0.6235294118);
+  background-color: rgba(217, 233, 215, 0.624);
   border-color: #080808;
-  color: #080808;
+  color: #0e0e0e;
 }
 
 /* Termina Página de Stock */

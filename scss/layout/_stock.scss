@@ -1,29 +1,69 @@
 @import "../components/variables";
 /* Página de Stock */
 
+// .conteiner-stock {
+//     padding: 20px;
+//     background-color: #5a5757;
+//     background-image: linear-gradient(to right, rgb(180, 218, 166),rgb(116, 148, 103) );
+  
+//     .stockCards {
+//       .card {
+//         margin: 20px;
+//         border-color: rgb(14, 13, 13);
+  
+//         p {
+//           font-weight: bold;
+//           color: #080808;
+//         }
+  
+//         .btn {
+//           background-color: $color-contenedores;
+//           border-color: #080808;
+//           color: #080808;
+//         }
+//       }
+//     }
+//   }
+
+
+
 .conteiner-stock {
-    padding: 20px;
-    background-color: #5a5757;
-    background-image: linear-gradient(to right, gray, black);
-  
-    .stockCards {
-      .card {
-        margin: 20px;
-        border-color: rgb(14, 13, 13);
-  
-        p {
-          font-weight: bold;
-          color: #080808;
-        }
-  
-        .btn {
-          background-color: $color-contenedores;
-          border-color: #080808;
-          color: #080808;
-        }
+  padding: 20px;
+  background-color: #5a5757;
+  background-image: linear-gradient(to right, rgb(180, 218, 166),rgb(116, 148, 103) );
+  color: #111111;
+  text-align: center;
+
+  .stockCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card {
+      margin: 10px;
+      border: 1px solid #080808;
+      background-color: #fff;
+      color: #080808;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+      .card-title {
+        font-size: 1.25rem;
+      }
+
+      .card-text {
+        font-weight: bold;
+      }
+
+      .btn {
+        background-color: $color-contenedores;
+        border-color: #080808;
+        color: #0e0e0e;
       }
     }
   }
+}
+
   
   /* Termina Página de Stock */
   
