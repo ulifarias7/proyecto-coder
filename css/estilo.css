@@ -212,6 +212,61 @@ footer .logofooter p {
   max-height: 50rem;
 }
 
+/*seccion sobreEnergy*/
+.sobreEnergy {
+  text-align: center;
+  background-color: white;
+  padding: 30px;
+}
+.sobreEnergy img {
+  margin-top: 20px;
+  width: 100px;
+}
+.sobreEnergy h2 {
+  animation-name: texto;
+  animation-duration: 2s;
+  color: #0c0c0c;
+  font-size: 30px;
+  margin: 10px;
+  padding-bottom: 30px;
+}
+
+.textoSobreEnergy {
+  padding: 30px;
+}
+.textoSobreEnergy h2 {
+  padding: 10px;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 20px;
+  color: #070707;
+  text-align: center;
+  margin: 0;
+}
+.textoSobreEnergy p {
+  color: rgb(15, 15, 15);
+  font-size: 16px;
+  margin: 10;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.textoSobreEnergy h3 {
+  text-align: center;
+  color: #161616;
+  margin: 0;
+}
+
+.fotosEnergy img {
+  width: 300px;
+  margin: 30px;
+  border-radius: 20px;
+}
+.fotosEnergy img img:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+/*termina seccion sobreEnergy*/
 /* Empieza presentación */
 #presentacion-conteiner {
   display: flex;
@@ -230,7 +285,8 @@ footer .logofooter p {
   padding: 10px;
   background-color: rgb(182, 224, 165);
 }
-#presentacion-conteiner .energy {
+
+.energy {
   display: flex;
   flex-direction: column;
   max-width: 417px; /* Establece un ancho máximo */
@@ -239,11 +295,11 @@ footer .logofooter p {
   align-items: flex-start;
   text-align: left;
 }
-#presentacion-conteiner .energy h3 {
+.energy h3 {
   margin-left: 10px;
   color: rgb(17, 17, 17);
 }
-#presentacion-conteiner .energy p {
+.energy p {
   padding: 5px;
   margin-left: 10px;
   color: black;
@@ -279,7 +335,7 @@ footer .logofooter p {
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 60px;
-  background-color: rgba(217, 233, 215, 0.624);
+  background-color: white;
 }
 .imagenesOpciones img {
   border-radius: 20px;
@@ -366,7 +422,7 @@ main {
   background-color: rgba(217, 233, 215, 0.624);
 }
 main .about-section, main .today-section {
-  padding: 80px 0;
+  padding: 50px 0;
   text-align: center; /* Centra el contenido */
 }
 main .about-section .row-servicios, main .today-section .row-servicios {
@@ -381,7 +437,7 @@ main .about-section .row-servicios > div, main .today-section .row-servicios > d
   padding: 30px;
   background-color: rgb(182, 224, 165);
   border-radius: 15px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
   transition-transform: 0.3s, box-shadow 0.3s;
 }
 main .about-section .row-servicios > div:hover, main .today-section .row-servicios > div:hover {
@@ -402,8 +458,9 @@ main .about-section .row-servicios > div h4, main .today-section .row-servicios 
 main .about-section .row-servicios > div p, main .today-section .row-servicios > div p {
   font-size: 16px;
   max-width: 450px;
-  margin: 0;
+  margin-left: 55px;
   color: #111111;
+  padding: 5px;
 }
 main .about-section .row-servicios > div .foto img, main .today-section .row-servicios > div .foto img {
   border-radius: 15px;
@@ -422,8 +479,7 @@ main .about-section .row-servicios > div .foto img, main .today-section .row-ser
 /* Página de Stock */
 .conteiner-stock {
   padding: 20px;
-  background-color: #5a5757;
-  background-image: linear-gradient(to right, rgb(180, 218, 166), rgb(116, 148, 103));
+  background-image: linear-gradient(to right, rgb(169, 216, 152), rgb(78, 124, 59));
   color: #111111;
   text-align: center;
 }
@@ -434,7 +490,6 @@ main .about-section .row-servicios > div .foto img, main .today-section .row-ser
 }
 .conteiner-stock .stockCards .card {
   margin: 10px;
-  border: 1px solid #080808;
   background-color: #fff;
   color: #080808;
   text-align: center;
@@ -448,7 +503,7 @@ main .about-section .row-servicios > div .foto img, main .today-section .row-ser
 }
 .conteiner-stock .stockCards .card .btn {
   background-color: rgba(217, 233, 215, 0.624);
-  border-color: #080808;
+  border: #080808;
   color: #0e0e0e;
 }
 

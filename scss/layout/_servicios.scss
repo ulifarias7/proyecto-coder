@@ -1,10 +1,9 @@
 /* Estilos para la página de Servicios */
 main{
-
-  background-color: $color-contenedores;
+background-color: $color-contenedores;
 .about-section, .today-section {
 
-  padding: 80px 0;
+  padding: 50px 0;
   text-align: center; /* Centra el contenido */
   
   
@@ -20,7 +19,7 @@ main{
       padding: 30px;
       background-color: $color-principal;
       border-radius: 15px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
       transition: {
         transform :0.3s,
         box-shadow 0.3s;
@@ -47,8 +46,9 @@ main{
       p {
         font-size: 16px;
         max-width: 450px;
-        margin: 0;
+        margin-left: 55px;
         color: #111111;
+        padding: 5px;
       }
 
       .foto img {

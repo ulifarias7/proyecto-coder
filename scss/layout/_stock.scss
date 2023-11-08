@@ -28,24 +28,22 @@
 
 
 .conteiner-stock {
-  padding: 20px;
-  background-color: #5a5757;
-  background-image: linear-gradient(to right, rgb(180, 218, 166),rgb(116, 148, 103) );
-  color: #111111;
-  text-align: center;
+                 padding: 20px;
+                 background-image: linear-gradient(to right, rgb(169, 216, 152),rgb(78, 124, 59) );
+                 color: #111111;
+                 text-align: center;
 
-  .stockCards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+                .stockCards {
+                 display: flex;
+                 justify-content: center;
+                 flex-wrap: wrap;
 
-    .card {
-      margin: 10px;
-      border: 1px solid #080808;
-      background-color: #fff;
-      color: #080808;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+             .card {
+              margin: 10px;  
+              background-color: #fff;
+              color: #080808;
+              text-align: center;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
       .card-title {
         font-size: 1.25rem;
@@ -57,7 +55,7 @@
 
       .btn {
         background-color: $color-contenedores;
-        border-color: #080808;
+        border: #080808;
         color: #0e0e0e;
       }
     }

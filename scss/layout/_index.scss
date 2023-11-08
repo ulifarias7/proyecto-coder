@@ -1,18 +1,88 @@
 @import "../components/variables";
 
 
+
 /* Carusel */
 #carouselExampleIndicators {
-    padding: 50px;
-    background-color: $color-secundario;
-    
-    background: linear-gradient(0deg, rgba(245, 245, 245, 0.10688025210084029) 37%, rgba(152, 148, 148, 0.3029586834733894) 86);
+            padding: 50px;
+            background-color: $color-secundario;
+             background: linear-gradient(0deg, rgba(245, 245, 245, 0.10688025210084029) 37%, rgba(152, 148, 148, 0.3029586834733894) 86);
   
-    .carousel-inner {
-      max-height: 50rem;
-    }
+        .carousel-inner {
+         max-height: 50rem;
+         }
+  }
+
+
+
+
+  /*seccion sobreEnergy*/
+  
+  .sobreEnergy {
+           text-align: center;
+           background-color: white;
+           padding: 30px;
+                img {
+                  margin-top: 20px;
+                   width: 100px; 
+                  }
+                       h2 {
+                       animation-name: texto;
+                       animation-duration: 2s;
+                       color: #0c0c0c;
+                        font-size: 30px;
+                        margin: 10px;
+                      padding-bottom: 30px;
+                     }
+   }
+
+
+    .textoSobreEnergy{
+      padding: 30px;
+      
+                          h2 {
+                          padding: 10px;                         
+                          font-size: 50px;
+                          text-transform: uppercase;
+                          margin: 20px;
+                          color: #070707;
+                          text-align: center;
+                          margin: 0; 
+                          }
+                        p {
+                         
+                            color: rgb(15, 15, 15);
+                            font-size: 16px;
+                            margin: 10;
+                            padding-left: 40px;
+                            padding-right: 40px; 
+                          }
+  
+                          h3 {
+                            text-align: center;
+                            color: #161616;
+                             margin: 0; }
+                          
+    
+                        }
+  .fotosEnergy {
+    img {
+    width: 300px;
+    margin: 30px; 
+    border-radius: 20px;
+  
+  img:hover {
+    transform: scale(1.04);
+    cursor: pointer; }
   }
   
+
+  }
+
+
+/*termina seccion sobreEnergy*/
+  
+
   /* Empieza presentación */
   #presentacion-conteiner {
     display: flex;
@@ -23,15 +93,15 @@
     align-self: stretch;
     background-color: $color-contenedores;
   
-    img {
-      border-radius: 15px;
-      max-width: 45%;
-      height: auto;
-      max-height: 300px;
-      padding: 10px;
-      background-color: $color-principal;
-    }
-  
+               img {
+                border-radius: 15px;
+                max-width: 45%;
+                height: auto;
+                max-height: 300px;
+                padding: 10px;
+                background-color: $color-principal;
+                }
+              }
     .energy {
       display: flex;
       flex-direction: column;
@@ -52,10 +122,12 @@
         color:$color-textos;
       }
     }
-  }
+  
   
   /* Termina presentación */
   
+
+
   /* Información */
   .infoEnergy {
     text-align: center;
@@ -90,7 +162,7 @@
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 60px;
-    background-color: $color-contenedores;
+    background-color: white;
   
     img {
       border-radius: 20px;
