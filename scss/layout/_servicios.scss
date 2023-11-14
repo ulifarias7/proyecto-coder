@@ -26,8 +26,8 @@ background-color: $color-contenedores;
       }
 
       &:hover {
-        transform: scale(1.02); /* Agranda el elemento al pasar el mouse por encima */
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Aumenta la intensidad de la sombra al pasar el mouse por encima */
+        transform:scale(1.02); /* Agranda el elemento al pasar el mouse por encima */
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); 
       }
 
       h2 {

@@ -152,7 +152,7 @@ footer .logofooter p {
   animation-name: texto;
   animation-duration: 2s;
   font-size: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .container-contacto {
@@ -442,7 +442,7 @@ main .about-section .row-servicios > div, main .today-section .row-servicios > d
 }
 main .about-section .row-servicios > div:hover, main .today-section .row-servicios > div:hover {
   transform: scale(1.02); /* Agranda el elemento al pasar el mouse por encima */
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Aumenta la intensidad de la sombra al pasar el mouse por encima */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 main .about-section .row-servicios > div h2, main .today-section .row-servicios > div h2 {
   font-size: 36px;
