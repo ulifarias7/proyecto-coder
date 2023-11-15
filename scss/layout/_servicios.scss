@@ -54,8 +54,11 @@ background-color: $color-contenedores;
       .foto img {
         border-radius: 15px;
         max-width: 100%;
+        height: auto;
         max-height: 100%;
         object-fit: cover;
+        display: block;
+        margin: 0 auto;
         
       }
     }

@@ -465,8 +465,11 @@ main .about-section .row-servicios > div p, main .today-section .row-servicios >
 main .about-section .row-servicios > div .foto img, main .today-section .row-servicios > div .foto img {
   border-radius: 15px;
   max-width: 100%;
+  height: auto;
   max-height: 100%;
   object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Termina Estilos para la página de Servicios */
@@ -518,6 +521,82 @@ main .about-section .row-servicios > div .foto img, main .today-section .row-ser
 }
 
 /* TERMINA BOTON WHATSAPP */
+.estilosP, footer .logofooter p, .infoEnergy p {
+  padding-left: 50px;
+  padding-right: 50px;
+  color: black;
+}
+
+/* Estilos para pantallas más pequeñas (300px a 767px) */
+@media only screen and (max-width: 767px) {
+  .sobreEnergy {
+    padding: 20px;
+  }
+  .sobreEnergy img {
+    margin-top: 5px;
+    width: 150px;
+  }
+  .sobreEnergy h2 {
+    font-size: 20px;
+  }
+  .textoSobreEnergy {
+    padding: 20px;
+  }
+  .textoSobreEnergy h2 {
+    font-size: 35px;
+  }
+  .textoSobreEnergy p {
+    font-size: 12px;
+  }
+  .textoSobreEnergy h3 {
+    font-size: 14px;
+  }
+  .textoSobreEnergy img {
+    width: 150px;
+    margin: 10px;
+  }
+  #presentacion-conteiner {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #presentacion-conteiner img {
+    max-width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    max-height: none; /* Elimina la altura máxima para mantener la proporción */
+  }
+  .energy {
+    max-width: none; /* Elimina el ancho máximo */
+    align-items: center;
+    text-align: center;
+  }
+  .about-section,
+  .today-section {
+    padding: 25px 0;
+  }
+  .about-section .row-servicios,
+  .today-section .row-servicios {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-section .row-servicios > div,
+  .today-section .row-servicios > div {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+  .about-section .row-servicios .foto img,
+  .today-section .row-servicios .foto img {
+    max-width: 100%;
+    height: auto;
+  }
+  .contenedor-nosotros {
+    grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+  }
+  .contenedor-nosotros .contenedor-nosotros .contenedor-nosotros-informacion,
+  .contenedor-nosotros .contenedor-nosotros .contenedor-nosotros-informacion2,
+  .contenedor-nosotros .contenedor-nosotros .contenedor-nosotros-informacion3 {
+    width: 100%; /* Asegura que ocupen el 100% del ancho en pantallas pequeñas */
+  }
+}
 .estilosP, footer .logofooter p, .infoEnergy p {
   padding-left: 50px;
   padding-right: 50px;

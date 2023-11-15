@@ -1,2 +1,106 @@
  
- 
+ @import "../components/variables";
+
+//  index
+
+/* Estilos para pantallas más pequeñas (300px a 767px) */
+@media only screen and (max-width: 767px) {
+ // Ajusta el tamaño de los elementos para dispositivos móviles
+
+
+
+    .sobreEnergy {
+      padding: 20px;
+  
+                 img {
+                margin-top: 5px;
+                width: 150px;
+                }
+  
+                 h2 {
+                 font-size: 20px;
+               }
+             }
+    .textoSobreEnergy {
+      padding: 20px;
+     
+  
+                      h2 {
+                      font-size: 35px;
+                      }
+  
+                      p {
+                     font-size: 12px;
+                      }
+  
+                       h3 {
+                       font-size: 14px;
+                       }
+  
+                       img {
+                     width: 150px;
+                     margin: 10px;
+                      }
+                    }
+  
+
+
+//presentacion       
+  #presentacion-conteiner {
+         flex-direction: column;
+         padding: 20px;
+            
+              
+                 img {
+                 max-width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+                  max-height: none; /* Elimina la altura máxima para mantener la proporción */
+                }
+               }
+                .energy {
+                  max-width: none; /* Elimina el ancho máximo */
+                  align-items: center;
+                  text-align: center;
+                }
+              
+//servicio
+
+
+  .about-section,
+  .today-section {
+    padding: 25px 0;
+  
+
+  .row-servicios {
+    flex-direction: column;
+    align-items: flex-start;
+  
+
+             > div {
+               flex: none;
+               width: 100%;
+              padding: 20px;
+              }
+
+            .foto img {
+              max-width: 100%;
+              height: auto;
+           }
+    } 
+  }
+
+  
+  
+  
+//nosotros 
+
+    .contenedor-nosotros {
+      grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+    
+  
+    .contenedor-nosotros .contenedor-nosotros-informacion,
+    .contenedor-nosotros .contenedor-nosotros-informacion2,
+    .contenedor-nosotros .contenedor-nosotros-informacion3 {
+      width: 100%; /* Asegura que ocupen el 100% del ancho en pantallas pequeñas */
+    }
+    }
+}
